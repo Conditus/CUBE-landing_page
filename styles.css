@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url("images/image%201.png") 100% 100%;
+    background-size: cover;
+    display: flex;
+}
+
+.block-logo {
+    background: rgba(255, 192, 0, 0.75);
+    margin-top: 12.5vh;
+    margin-bottom: 12.5vh;
+    width: 50%
+}
+
+.block-logo img {
+    margin-left: 50%;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.links p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #434244;
+    margin-left: 10vw;
+}
+
+.block-title {
+    width: 500px;
+    height:250px;
+    display: flex;
+}
+
+.block-title__shadow-text {
+    position: absolute;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 144px;
+    line-height: 180px;
+    
+    color: rgba(255, 192, 0, 0.25);
+}
+.block-title__text {
+    margin-left: 85px;
+    align-self: flex-end;
+    position: relative;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #434244;
+
+}
+
+
+.block-list {
+    
+}
+
+.block-list__title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #434244;
+}
+
+.block-list__text {
+    margin: inherit;
+    padding: inherit;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    list-style: none;
+    
+    color: #434244;
+}
+
+.block-list__text li {
+    display: flex;
+    margin-top: 10px;
+}
+
+.rectangle{
+    width: 24px;
+    height: 24px;
+    background: #FFC000;
+    z-index: -1;
+    margin-right: 10px;
+    
+    text-align: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.block-pannel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.block-pannel__tile {
+    margin: 10;
+    width: 374px;
+    height: 287px;
+    background-color: skyblue;
+    align-items: flex-end;
+    display: flex;
+}
+
+.block-pannel__tile span {
+    width: 4px;
+    height: 32px;
+    margin-left: 20px;
+    background: #FFC000;
+}
+
+.block-pannel__tile p {
+    
+}
+
+
+
+footer {
+    background: #434244;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    min-height: 75px;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-FREE/Gilroy-Light.otf")
+}
+
+@font-face {
+    font-family: "Gilroy-bold";
+    src: url("fonts/Gilroy-FREE/Gilroy-ExtraBold.otf")
+}
