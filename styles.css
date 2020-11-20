@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/*-------------Шапка сайта-------------*/
 header {
     background: url("images/image%201.png") 100% 100%;
     background-size: cover;
@@ -20,87 +21,105 @@ header {
     margin-left: 50%;
     margin-top: 7.5vh;
     margin-bottom: 7.5vh;
+    padding-right: %;
 }
 
 .links {
     width: 40%;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .links p {
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: bold;
+    font-family: Gilroy-bold;
     font-size: 24px;
     line-height: 29px;
-    /* identical to box height */
     color: #434244;
     margin-left: 10vw;
 }
 
+a { text-decoration: none }
+a:visited { color: #434244 }
+
+
+/*-----Название раздела с описанием------*/
 .block-title {
-    width: 500px;
-    height:250px;
+    width: 530px;
+    height: 250px;
     display: flex;
+    margin-left: 15vw;
 }
 
 .block-title__shadow-text {
+    align-self: flex-end;
     position: absolute;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 900;
+    font-family: Gilroy-bold;
     font-size: 144px;
-    line-height: 180px;
-    
+    margin: 0;
     color: rgba(255, 192, 0, 0.25);
 }
-.block-title__text {
+
+.block-title__thinText {
     margin-left: 85px;
     align-self: flex-end;
     position: relative;
     font-family: Gilroy;
-    font-style: normal;
-    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    
     color: #434244;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
 
+.block-title__boldText {
+    margin-left: 85px;
+    align-self: flex-end;
+    position: relative;
+    font-family: Gilroy-bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #434244;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+/*----------Описание компании----------*/
+
+.block-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
-.block-list {
+.block-textDesc {
     
+}
+
+.block-list {
+    margin-bottom: 45vh;
 }
 
 .block-list__title {
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: bold;
+    font-family: Gilroy-bold;
     font-size: 36px;
     line-height: 44px;
-    /* identical to box height */
     color: #434244;
 }
 
 .block-list__text {
-    margin: inherit;
-    padding: inherit;
     font-family: Gilroy;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     list-style: none;
-    
     color: #434244;
+    
 }
 
 .block-list__text li {
     display: flex;
-    margin-top: 10px;
+    margin: 30px 0;
 }
 
 .rectangle{
@@ -111,13 +130,53 @@ header {
     margin-right: 10px;
     
     text-align: center;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: bold;
+    font-family: Gilroy-bold;
     font-size: 18px;
     line-height: 22px;
 }
 
+
+.block-imageDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -35vh;
+    margin-left: 2vw;
+    margin-right: -15vw;
+}
+
+.block-imageDesc h1 {
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    
+    position: absolute;
+    padding: 2vh 6vw;
+    margin-top: -3vh;
+    margin-left: 7vw;
+    text-align: center;
+    background-color: #FFC000;
+}
+
+.block-imageDesc img {
+    
+}
+
+.block-imageDesc p {
+    position: absolute;
+    font-family: Gilroy;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    padding: 2vw;
+    margin-top: 30vh;
+    margin-left: -2vw;
+    margin-right: 2vw;
+    background-color: rgba(255, 192, 0, 0.75);;
+}
+
+/*-------------Описание БП-------------*/
 .block-pannel {
     display: flex;
     justify-content: center;
@@ -157,12 +216,17 @@ footer {
     min-height: 75px;
 }
 
+/*--------------Шрифты--------------*/
 @font-face {
     font-family: "Gilroy";
-    src: url("fonts/Gilroy-FREE/Gilroy-Light.otf")
+    src: url("fonts/Gilroy-FREE/Gilroy-Light.otf");
+    font-style: normal; 
+    font-weight: normal; 
 }
 
 @font-face {
     font-family: "Gilroy-bold";
-    src: url("fonts/Gilroy-FREE/Gilroy-ExtraBold.otf")
+    src: url("fonts/Gilroy-FREE/Gilroy-ExtraBold.otf");
+    font-style: bold; 
+    font-weight: normal; 
 }
