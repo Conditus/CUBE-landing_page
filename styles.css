@@ -7,25 +7,19 @@ body {
 header {
     background: url("images/image%201.png") 100% 100%;
     background-size: cover;
-    display: flex;
 }
 
 .block-logo {
     background: rgba(255, 192, 0, 0.75);
-    margin-top: 12.5vh;
-    margin-bottom: 12.5vh;
-    width: 50%
 }
 
 .block-logo img {
-    margin-left: 50%;
+    margin-left: 27vw;
     margin-top: 7.5vh;
     margin-bottom: 7.5vh;
-    padding-right: %;
 }
 
 .links {
-    width: 40%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -45,8 +39,7 @@ a:visited { color: #434244 }
 
 /*-----Название раздела с описанием------*/
 .block-title {
-    width: 530px;
-    height: 250px;
+    height: 144px;
     display: flex;
     margin-left: 15vw;
 }
@@ -61,9 +54,9 @@ a:visited { color: #434244 }
 }
 
 .block-title__thinText {
+    width: 480px;
     margin-left: 85px;
     align-self: flex-end;
-    position: relative;
     font-family: Gilroy;
     font-size: 18px;
     line-height: 22px;
@@ -77,29 +70,35 @@ a:visited { color: #434244 }
     align-self: flex-end;
     position: relative;
     font-family: Gilroy-bold;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 36px;
     color: #434244;
     margin-top: 0;
     margin-bottom: 35px;
+    padding-bottom: 1vh;
 }
 
 /*----------Описание компании----------*/
 
 .block-container {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#HELLOT {
+    margin-top: 100px;
+}
+
+#HELLO{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-
 .block-textDesc {
-    
+    margin-bottom: 20vh;
 }
 
-.block-list {
-    margin-bottom: 45vh;
-}
+.block-list {}
 
 .block-list__title {
     font-family: Gilroy-bold;
@@ -135,44 +134,47 @@ a:visited { color: #434244 }
     line-height: 22px;
 }
 
-
 .block-imageDesc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 50vh;
+    
     margin-top: -35vh;
     margin-left: 2vw;
-    margin-right: -15vw;
 }
 
 .block-imageDesc h1 {
+    z-index: 1;
     font-family: Gilroy;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    
-    position: absolute;
-    padding: 2vh 6vw;
+    padding: 2vh;
     margin-top: -3vh;
-    margin-left: 7vw;
+    margin-left: 6vw;
     text-align: center;
     background-color: #FFC000;
 }
 
 .block-imageDesc img {
-    
+    background: linear-gradient(0deg, blue, green 40%, red);
+    z-index: ;
+    position: absolute;
+    width: 95vw;
+    height: auto;
 }
 
 .block-imageDesc p {
-    position: absolute;
+    z-index: 1;
     font-family: Gilroy;
     font-size: 24px;
     line-height: 28px;
     color: white;
     padding: 2vw;
-    margin-top: 30vh;
+    padding-right: 14vw;
     margin-left: -2vw;
-    margin-right: 2vw;
+    margin-right: -15vw;
     background-color: rgba(255, 192, 0, 0.75);;
 }
 
@@ -181,39 +183,138 @@ a:visited { color: #434244 }
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 5vw;
-    margin-right: 5vw;
 }
 
 .block-pannel__tile {
-    margin: 10;
-    width: 374px;
+    margin: 1vh 1vw;
+    width: 374px; 
     height: 287px;
-    background-color: skyblue;
     align-items: flex-end;
     display: flex;
+    font-family: Gilroy;
 }
 
-.block-pannel__tile span {
-    width: 4px;
-    height: 32px;
-    margin-left: 20px;
-    background: #FFC000;
-}
 
+#emptyText{
+    align-items: flex-start;
+}
+#emptyText p{
+    border: none;
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    font-weight: normal;
+}
 .block-pannel__tile p {
-    
+    border-left: 4px solid #FFC000;
+    margin: 1vw;
+    padding: 4px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
 }
+
+#W1{ background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0) 40%), url(images/WHAT/image%206.png)}
+#W2{ background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0) 40%), url(images/WHAT/image%205.png) }
+#W3{ background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0) 40%), url(images/WHAT/image%204.png) }
+#W4{ background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0) 40%), url(images/WHAT/image%207.png) }
+#W5{ background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0) 40%), url(images/WHAT/image%208.png) }
+/*----------------Зачем---------------*/
+
+#WHY{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background: url(images/image%2010.png) no-repeat;
+}
+
+#descwhy {
+    margin-left: 19vw;
+}
+
+.block-accent{
+    display: flex;
+    margin-top: -15vh;
+}
+
+.block-accent__rectangle{
+    height: 32vh;
+    width: 20vw;
+    background: #FFC000;
+    margin:2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding: 1vw
+}
+
+.block-accent__rectangle h1 {
+    font-family: Gilroy;
+}
+.block-accent__rectangle p{
+    font-family: Gilroy;
+}
+
+.block-info {
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Gilroy;
+    height: 110vh;
+    align-content: flex-start
+}
+
+.block-info__pannel{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+    
+    width: 31vw;
+    height: 36vh;
+
+    margin: 1vw;
+    
+    background: #FFFFFF;
+    border: 1px solid #FFC000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.04);
+}
+
+.block-info__pannel h2{
+    margin: 1vw;
+    width: 28vw;
+    font-size: 24px;
+}
+
+.block-info__pannel p{
+    margin: 1vw;
+    font-size: 18px;
+}
+
+.block-info__pannel img{
+    position: absolute;
+    align-self:flex-end;
+}
+
+/*-----------------КАК----------------*/
 
 
 
 footer {
-    background: #434244;;
+    background: #434244;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 22vh;
     min-height: 75px;
+    font-family: Gilroy-bold;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFC000;
 }
 
 /*--------------Шрифты--------------*/
@@ -229,4 +330,52 @@ footer {
     src: url("fonts/Gilroy-FREE/Gilroy-ExtraBold.otf");
     font-style: bold; 
     font-weight: normal; 
+}
+
+@media only screen and (min-width: 500px) {
+    header {
+        background: url("images/image%201.png") 100% 100%;
+        background-size: cover;
+        display: flex;
+    }
+
+    .block-logo {
+        background: rgba(255, 192, 0, 0.75);
+        margin-top: 12.5vh;
+        margin-bottom: 12.5vh;
+        width: 50%
+    }
+
+    .block-logo img {
+        margin-left: 50%;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+
+    .links {
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .links p {
+        font-family: Gilroy-bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #434244;
+        margin-left: 10vw;
+    }
+
+    a { text-decoration: none }
+    a:visited { color: #434244 }
+    
+    .block-imageDesc img {
+        width: auto;
+        height: 90vh;
+    }
+    
+    .block-imageDesc {
+        height: 85vh;
+    }
 }
