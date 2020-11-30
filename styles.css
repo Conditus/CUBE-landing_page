@@ -122,8 +122,7 @@ a:visited { color: #434244 }
 }
 
 .rectangle{
-    width: 24px;
-    height: 24px;
+    padding: 2px;
     background: #FFC000;
     z-index: -1;
     margin-right: 10px;
@@ -132,6 +131,7 @@ a:visited { color: #434244 }
     font-family: Gilroy-bold;
     font-size: 18px;
     line-height: 22px;
+    color: #434244;
 }
 
 .block-imageDesc {
@@ -262,8 +262,7 @@ a:visited { color: #434244 }
     justify-content: center;
     flex-wrap: wrap;
     font-family: Gilroy;
-    height: 110vh;
-    align-content: flex-start
+    align-content: flex-start;
 }
 
 .block-info__pannel{
@@ -301,7 +300,43 @@ a:visited { color: #434244 }
 
 /*-----------------КАК----------------*/
 
+#HOW{
+    background: url(images/gear-2%201.png) no-repeat;
+    background-position: right;
+}
 
+.block-steps {
+    display: flex;
+    justify-content: center;
+}
+
+.block-steps__description {}
+
+#HOWt {
+    width: 17vw;
+    margin-right: 5vw
+}
+
+.block-steps__explaning {
+    margin-top: 2vh;
+}
+
+.step {
+    margin-left: -1.6vw;
+    margin-bottom: -2vh;
+    margin-top: -2vh;
+}
+
+.block-steps__explaning p{
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 1vh 1.5vw 4vh 2.5vw;
+    border-left: 1px solid #FFC000;
+}
+.block-steps__explaning p:nth-last-of-type(1){
+    border-left: none
+}
 
 footer {
     background: #434244;
@@ -310,12 +345,17 @@ footer {
     align-items: center;
     height: 22vh;
     min-height: 75px;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+    
     font-family: Gilroy-bold;
     font-size: 24px;
     line-height: 29px;
-
     color: #FFC000;
 }
+
+footer a:visited{ color: #FFC000 }
 
 /*--------------Шрифты--------------*/
 @font-face {
